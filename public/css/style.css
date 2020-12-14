@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+	--dark-color-a: #2F3136;
+	--dark-color-b: #36393F;
+	--darkest-color: #202225;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+    color: white;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--darkest-color);
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.spec-scientist {
+	height: 500px;
+	width: 360px;
+	float: left; 
+	overflow: hidden;
+}
+
+.spec-coach {
+	height: 500px;
+	width: 340px;
+	float: left; 
+	overflow: hidden;
+}
+
+#liquid {
+	height: 400px; 
+	width: 130px; 
+	background-color: white; 
+	position: absolute; 
+	bottom: 0px; 
+	border-top: 0;
+}
+
+#beaker {
+	position: absolute;
+	border: 10px solid #FFF;
+	border-top: 0;
+	height: 410px;
+	left: 500px;
+	bottom: 270px;
+	width: 150px;
+}
+
+#beaker-coach {
+	position: absolute;
+	border: 10px solid #FFF;
+	border-top: 0;
+	height: 410px;
+	left: 310px;
+	bottom: 270px;
+	width: 150px;
+}
+
+#liquid-coach {
+
+	height: 0px; 
+	width: 130px; 
+	position: absolute; 
+	bottom: 0px; 
+	border-top: 0;
+}
+
+#beaker-spec-1 {
+	position: absolute;
+	border: 10px solid #FFF;
+	border-top: 0;
+	height: 410px;
+	left: 310px;
+	bottom: 270px;
+	width: 150px;
+}
+
+#liquid-spec-1 {
+
+	height: 0px; 
+	width: 130px; 
+	position: absolute; 
+	bottom: 0px; 
+	border-top: 0;
+}
+  
+#beaker-spec-2 {
+	position: absolute;
+	border: 10px solid #FFF;
+	border-top: 0;
+	height: 410px;
+	left: 700px;
+	bottom: 270px;
+	width: 150px;
+}
+
+#liquid-spec-2 {
+
+	height: 0px; 
+	width: 130px; 
+	position: absolute; 
+	bottom: 0px; 
+	border-top: 0;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+.btn-game {
+	cursor: pointer;
+	margin-top: 10px;
+	padding: 5px 15px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+.btn-how-to-play {
+	cursor: pointer;
+	padding: 15px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+.btn-exit {
+	cursor: pointer;
+	padding: 5px 15px;
+	margin-left: 10px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+.btn-help {
+	cursor: pointer;
+	padding: 5px 15px;
+	margin-left: 1000px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+.btn-chat-send {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--darkest-color);
+	color: white;
+	border: 0;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+	max-width: 1500px;
+	background: #fff;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+/* 
+
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+*/
+
+.chat-header {
+	background: var(--dark-color-a);
+	color: #fff;
+
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.chat-main-help {
+	background-color: #36393F;
+}
+
+.chat-sidebar {
+	height: 600px;
+	background: #36393F;
+	color: #fff;
+	padding: 20px 20px 60px;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	padding: 10px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	height: 600px;
+	border-left: 5px solid #fff;
+	background: #36393F;
+	padding: 30px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 20px 30px;
+	background-color: var(--dark-color-a);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+    background-color: #36393F;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+	flex: 1;
+}
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+    background-color: #36393F;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+    background-color: #36393F;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+	margin-top: 20px;
+	width: 100%;
+}
