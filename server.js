@@ -1,3 +1,4 @@
+
 const path = require('path');
 const http = require('http');
 const express = require('express');
@@ -46,19 +47,15 @@ io.on('connection', socket => {
     // Notify on user disconnects
     socket.on('disconnect', () => {
         const user = userLeave(socket.id);
-
-        if (user.role == "Scientist") {
-            localStorage.playerOneIsHere = 0;
-        }
         
         if(user){
             io.to(user.room).emit('message', formatMessage(serverName, `${user.username} has left the chat`));
         }
 
-        io.to(user.room).emit('roomUsers', {
+/*         io.to(user.room).emit('roomUsers', {
             room: user.room,
             users: getRoomUsers(user.room)
-        })
+        }) */
     });
 });
 
