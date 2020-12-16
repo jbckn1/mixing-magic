@@ -3,12 +3,12 @@ setInterval(update, 1000);
 localStorage.playerOneVolume = Math.floor(Math.random() * 400);
 localStorage.playerOneTemp = Math.floor(Math.random() * 100);
 localStorage.playerOnePh = Math.floor(Math.random() * 15);
-localStorage.playerOneColor = "red";
+localStorage.playerOneColor = choosingRandomColor();
 
 localStorage.playerTwoVolume = Math.floor(Math.random() * 400);
 localStorage.playerTwoTemp = Math.floor(Math.random() * 100);
 localStorage.playerTwoPh = Math.floor(Math.random() * 15);
-localStorage.playerTwoColor = "green";
+localStorage.playerTwoColor = choosingRandomColor();
 
 localStorage.volumeFlag = 0;
 localStorage.tempFlag = 0;
@@ -132,9 +132,50 @@ function update() {
 function checkIfBeakersMatch() {
  
     if ((localStorage.playerOneTemp == localStorage.playerTwoTemp) && (localStorage.playerOneVolume == localStorage.playerTwoVolume) && (localStorage.playerOneColor == localStorage.playerTwoColor) && (localStorage.playerOnePh == localStorage.playerTwoPh)) {
-        alert("Beakers match! You two won the game! Let the coach know!");
+        alert("Beakers match! You two won the game! Let the coach know! Exit the game and start over when you two are done talking!");
     } else {
 
         alert("Beakers don't match!");
+    }
+}
+
+function choosingRandomColor() {
+
+    let randomColorVariable = Math.floor(Math.random() * 8);
+
+    switch (randomColorVariable) {
+
+        case 0:
+            
+            return "red";
+            
+        case 1:
+                
+            return "blue";
+
+        case 2:
+                
+            return "green";
+
+        case 3:
+                
+            return "yellow";
+            
+        case 4:
+                
+            return "purple";
+
+        case 5:
+                
+            return "pink";
+
+        case 6:
+                
+            return "orange";
+
+        default:
+
+            return "red";
+            
     }
 }

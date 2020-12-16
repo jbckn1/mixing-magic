@@ -31,40 +31,59 @@
 
         <div style="margin-left: 20px;">
 
-          <h1>Objective</h1>
-          <p>There will be three total players. The game consists of two players interacting with a beaker and changing the color of the contents within, with the third able to have an omnipotent view and comment on the progress of the other two. Player 1 will be able to change the contents of the beaker by adding colored drops, water, an acid, or a base. Player 2 will be able to test the beaker to determine the contents within. They will be able to see a randomly determined beaker. Player 3 will be able to watch over the progress of the other two and make comments of encouragement. </p>
+          <h2>Important Information and User Specification</h2>
+          <p>Mixing Magic must be played on a 1920 x 1080 resolution monitor. Using a monitor not meeting this standard could have unintended results, such as the beaker appears in unintended places.
+
+            In addition, only one player should join as the scientist and coach! We do not have safeguards at this moment protecting multiple people from joining, which will be coming in the next update. When someone joins as the scientist, the beaker values are changed!
+            </p>
+
+          <h2>Game Description</h2>
+          <p>Mixing Magic is a point-and-click game that has two players working together to recreate the color, volume, temperature, and pH of a randomly generated beaker. 
+            In addition to the two players, multiple spectators may join the game and spectate the interactions of the two players with the opportunity to provide hints to the players.</p>
+          
+          <h2>Game Objective</h2>
+          <p>The objective of the game will be for the scientist and the coach to work together to recreate the color, volume, temperature, and pH of the beaker on the coach's screen to the beaker on the scientist screen.</p>
   
-          <h1>Scientist</h1>
-          <p>Player 1 will be able to add an acid or a base to alter the pH of the solution, distilled water to dilute the solution, and drops of food coloring to alter the color of the solution. They will have buttons to add acid, add base, add water, or add food coloring in order to match the levels Players 2 and 3 have coached them to reach.</p>
-          <p>Goal:</p>
-          <p>Player 1's goal is to create the correct solution after following the suggestions of Players 2 and 3.</p>
-  
-          <h1>Coach</h1>
-          <p>Player 2 will see a randomly generated solution and try to coach Player 1 to recreate the solution. Player 2 will be able to test the solution to see the pH level, and will be able to communicate with Player 1 in order to guide them on what they should do. The communication will occur through the chat box on the right hand side of the screen. They will have buttons to test the pH level to see if it matches their given starting level.</p>
-          <p>Goal:</p>
-          <p>Player 2's goal is to coach Player 1 to accurately create the correct solution.</p>
-  
-          <h1>Spectator</h1>
-          <p>Player 3 will be able to see the screens of the other two players in addition to a chat box. They will be able to use the chat box to offer words of encouragement or coach the other two players in their goal. </p>
-          <p>Goal:</p>
-          <p>Player 3's goal is to help the other two players by either providing coaching, or by offering words of encouragement.</p>
+          <h2>Communication</h2>
+          <p>On the right-hand side of every role, there will be a chat box for communication between the players. Each participate will have the name they choose at the login screen appear and the time when they send a message</p>
+
+          <h2>Scientist Role</h2>
+          <p>The scientist will be tasked with operating the buttons to measure and change the volume, temperature, pH, and color of the beaker they see on their screen. The scientist will have buttons to measure the volume, 
+            measure the tempetaure, measure the ph, change the volume, change the tempertaure, change the ph, change the color, and to compare the two beakers.</p>
+
+          <h2>Coach Role</h2>
+          <p>The coach will be provided information about the scientist’s beaker including the volume, temperature, pH, and color of the beaker and information about the beaker they need to help the scientist recreate. </p>
+
+          <h2>Spectator's Role</h2>
+          <p>Spectators will be able to see two beakers on their screen corresponding to the beakers for the scientist and the coach. The beakers will show the volume level and the color of the liquid for each beaker.</p>
+                    
+          <h2>Understanding and Measuring liquid Volume</h2>
+          <p>Liquid volume is the amount of space occupied by a liquid at rest. The volume of liquid can be measured by using several different methods. 
+            Mixing magic measures volume in beakers in milliliters. The scientist's beaker and the coach's beaker will both be assigned a random value 
+            between 0 ml to 400 ml. The volume of the coach's beaker will be provided on their screen in the output box. The volume of the scientist's 
+            beaker can be measured by pressing the measure volume button on the scientist's screen, which will display the volume on the coach's output box </p>
+            
+          <h2>Understanding and Measuring Temperature</h2>
+          <p>Temperature is a physical quantity that expresses hot and cold. Mixing Magic uses the Celsius scale to measure temperature. The temperature range for each beaker goes from 0 ⁰C to 99 ⁰C.</p>
+
+          <h2>Understanding and Measuring pH</h2>
+          <p>PH is a scale used to specify the acidity or basicity of a liquid solution. Acidic solutions are measured in the range from 0 – 6. Neutral solutions have a pH of 7. Basic solutions have a pH level of 8 – 14.
+             In normal circumstances, if you add liquid to a solution, the pH will lower. However, Mixing Magic disregards that fact to simplify the game. </p>
+
+          <h2>Color Range in Mixing Magic</h2>
+          <p>The beakers in Mixing Magic may range from red, blue, yellow, green, purple, orange, and pink.</p>
 
         </div>
 
-
-        <br>
-        
+        <br>        
       </main>
 
       <div class="chat-form-container">
 
       </div>
 
-
     </div>
-
-    
-    
+  
     <script src="/socket.io/socket.io.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
     
